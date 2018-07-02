@@ -1,3 +1,10 @@
+proot (5.1.0-2ubports1) xenial; urgency=medium
+
+  * Fix arm64 build
+  * Fix seccomp filters on newer kernels
+
+ -- Marius Gripsgard <marius@ubports.com>  Mon, 02 Jul 2018 21:24:51 +0200
+
 proot (5.1.0-1) unstable; urgency=low
   * Upgrade to latest PRoot version
     - PRoot is now embedding is own ELF interpreter
