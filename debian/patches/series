@@ -2,3 +2,4 @@ Install-proot-into-DESTDIR-usr-bin.patch
 Fix-man-syntax.diff
 arm64.patch
 fix-seccomp-filters-for-newer-kernels.patch
+no-seccomp.patch

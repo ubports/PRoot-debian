@@ -1,0 +1,15 @@
+Index: proot-5.1.0/src/tracee/event.c
+===================================================================
+--- proot-5.1.0.orig/src/tracee/event.c
++++ proot-5.1.0/src/tracee/event.c
+@@ -86,8 +86,8 @@ int launch_process(Tracee *tracee, char
+ 
+ 		/* Improve performance by using seccomp mode 2, unless
+ 		 * this support is explicitly disabled.  */
+-		if (getenv("PROOT_NO_SECCOMP") == NULL)
+-			(void) enable_syscall_filtering(tracee);
++		//if (getenv("PROOT_NO_SECCOMP") == NULL)
++		//	(void) enable_syscall_filtering(tracee);
+ 
+ 		/* Now process is ptraced, so the current rootfs is already the
+ 		 * guest rootfs.  Note: Valgrind can't handle execve(2) on
